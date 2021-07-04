@@ -11,3 +11,4 @@ pool: First
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+- bash: ansible-playbook awstest.yml
