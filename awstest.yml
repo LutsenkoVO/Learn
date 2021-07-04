@@ -2,13 +2,13 @@
   connection: local
   gather_facts: False
   vars:
-    hostname: Test
-    ec2_access_key: "Secret"
-    ec2_secret_key: "Secret_key”
-    instance_type: "t2.micro"
-    image: "ami-02f4b9df9aed557dd"
-    group: "sg-0a081a6884e21b760"
-    region: "us-east-2"
+  hostname: Test
+      ec2_access_key: "Secret"
+      ec2_secret_key: "Secret_key”
+      instance_type: "t2.micro"
+      image: "ami-02f4b9df9aed557dd"
+      group: "sg-0a081a6884e21b760"
+      region: "us-east-2"
   tasks:
     - name: make one instance
       ec2: image={{ image }}
