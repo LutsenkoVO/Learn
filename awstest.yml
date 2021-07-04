@@ -2,16 +2,17 @@
   connection: local
   gather_facts: False
   vars:
-  hostname: Test
+      hostname: Second
       instance_type: "t2.micro"
       image: "ami-02f4b9df9aed557dd"
       group: "sg-0a081a6884e21b760"
       region: "us-east-2"
   tasks:
     - name: make one instance
-      ec2: image={{ image }}
-           instance_type={{ instance_type }}
-           instance_tags='{ "Name":"{{ hostname }}" }'
-           region={{ region }}
-           group={{ group }}
-           wait=true
+      ec2: 
+          image: "{{ image }}"
+          instance_type: "{{ instance_type }}"
+          instance_tags: '{ "Name":"{{ hostname }}" }'
+          region: "{{ region }}"
+          group: "{{ group }}"
+          wait: true
