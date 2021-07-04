@@ -3,8 +3,6 @@
   gather_facts: False
   vars:
   hostname: Test
-      ec2_access_key: "Secret"
-      ec2_secret_key: "Secret_key”
       instance_type: "t2.micro"
       image: "ami-02f4b9df9aed557dd"
       group: "sg-0a081a6884e21b760"
@@ -13,8 +11,6 @@
     - name: make one instance
       ec2: image={{ image }}
            instance_type={{ instance_type }}
-           aws_access_key={{ ec2_access_key }}
-           aws_secret_key={{ ec2_secret_key }}
            instance_tags='{ "Name":"{{ hostname }}" }'
            region={{ region }}
            group={{ group }}
