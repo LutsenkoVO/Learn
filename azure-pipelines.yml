@@ -11,5 +11,6 @@ pool: First
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-- bash: terraform apply main.tf
+
+
 
