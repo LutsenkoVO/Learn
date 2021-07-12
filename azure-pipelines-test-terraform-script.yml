@@ -10,5 +10,8 @@ pool: First
 
 steps:
 - script: terraform init
+steps:
 - script: terraform plan
+steps: 
+- script: terraform apply maim.tf 
 
