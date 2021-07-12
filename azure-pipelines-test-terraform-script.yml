@@ -11,5 +11,5 @@ pool: First
 steps:
 - script: terraform init
 - script: terraform plan 
-- script: terraform apply main.tf
+- script: terraform apply
 
