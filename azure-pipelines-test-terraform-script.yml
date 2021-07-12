@@ -9,5 +9,5 @@ trigger:
 pool: First
 
 steps:
-- script: terraform apply git@github.com:LutsenkoVO/Learn/main.tf
+- script: terraform plan
 
