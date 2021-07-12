@@ -9,4 +9,6 @@ trigger:
 pool: First
 
 steps:
+- script: terraform init
+- script: terraform plan
 - script: terraform destroy
